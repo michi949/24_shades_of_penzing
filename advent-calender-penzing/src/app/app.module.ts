@@ -8,11 +8,21 @@ import { CalendarComponent } from './calendar/calendar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { OverviewComponent } from './overview/overview.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { TeamComponent } from './team/team.component';
+import { AboutComponent } from './about/about.component';
+import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CalendarComponent
+    CalendarComponent,
+    OverviewComponent,
+    PageNotFoundComponent,
+    TeamComponent,
+    AboutComponent,
+    LegalNoticeComponent
   ],
   imports: [
     BrowserModule,

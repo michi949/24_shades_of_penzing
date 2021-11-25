@@ -1,0 +1,26 @@
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.card-columns {
+  .card {
+    border: 0;
+  }
+}
+
+
+  .blur-image {
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+  }
+
+
+.calendar-count-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

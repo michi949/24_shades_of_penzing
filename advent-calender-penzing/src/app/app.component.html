@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #62C4D1">
   <div class="container-fluid">
-    <a class="navbar-brand" style="background-color: white; padding-left: 0.5rem; padding-right: 0.5rem; border-radius: 10px" href="#">
+    <a class="navbar-brand" routerLink="/overview" routerLinkActive="active" style="background-color: white; padding-left: 0.5rem; padding-right: 0.5rem; border-radius: 10px" href="#">
       <img src="assets/icons/jvp14.svg" alt="" width="50" height="50" class="d-inline-block align-text-center">
       <span style="margin-left: 0.5rem;"> Junge ÖVP 14 </span>
     </a>
@@ -11,16 +11,16 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#">Übersicht</a>
+          <a class="nav-link" routerLink="/overview" routerLinkActive="active">Übersicht</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Team</a>
+          <a class="nav-link" routerLink="/team" routerLinkActive="active">Team</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" routerLink="/about" routerLinkActive="active">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Impressum</a>
+          <a class="nav-link" routerLink="/legal" routerLinkActive="active">Impressum</a>
         </li>
       </ul>
     </div>
@@ -52,7 +52,7 @@
               <a> <fa-icon [icon]="['fas', 'share-square']"></fa-icon> </a>
             </li>
             <li class="list-group-item">
-              <a> Impressum </a>
+              <a routerLink="/legal" routerLinkActive="active"> Impressum </a>
             </li>
           </ul>
       </div>
