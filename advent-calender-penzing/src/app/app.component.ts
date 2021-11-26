@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
+import {TimeService} from "./services/time-service";
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,10 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 })
 export class AppComponent {
 
-  public constructor(library: FaIconLibrary) {
+  public constructor(private readonly library: FaIconLibrary,
+                     private readonly timeService: TimeService) {
     library.addIconPacks(fas, fab);
+    timeService.loadFromWorldTimeApi();
   }
+
 }

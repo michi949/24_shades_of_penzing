@@ -11,6 +11,8 @@ import { TeamComponent } from './team/team.component';
 import { AboutComponent } from './about/about.component';
 import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 import { CompanyOverviewComponent } from './company-overview/company-overview.component';
+import {HttpClientModule} from "@angular/common/http";
+
 
 @NgModule({
   declarations: [
@@ -20,16 +22,18 @@ import { CompanyOverviewComponent } from './company-overview/company-overview.co
     TeamComponent,
     AboutComponent,
     LegalNoticeComponent,
-    CompanyOverviewComponent
+    CompanyOverviewComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     NgbModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

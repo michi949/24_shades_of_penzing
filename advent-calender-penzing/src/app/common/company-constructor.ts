@@ -8,7 +8,7 @@ export class CompanyConstructor {
   public companies: ICompany[] = []
 
   constructor() {
-    this.setupCompanies()
+    this.setupCompanies();
   }
 
   private setupCompanies() {
