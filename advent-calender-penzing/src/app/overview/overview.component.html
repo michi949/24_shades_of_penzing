@@ -1,4 +1,3 @@
-<!-- <div *ngFor="let i of [].constructor(40)" class="snowflake"></div> -->
 <div *ngFor="let i of [].constructor(40)" class="snowflake"></div>
 
 
@@ -22,7 +21,7 @@
     <div class="card-columns" style="margin-top: 0.8rem">
       <div *ngFor="let company of companyConstructor.companies" class="card">
         <div *ngIf="company.showDate <= timeService.currentDate; else showCard">
-        <img style="width:100%;" class="blur-image" src="assets/images/calendar-mock/christmas-tree-5758765_1280.jpeg">
+        <img style="width:100%; height: 230px" class="blur-image" src="assets/images/calendar-mock/christmas-tree-5758765_1280.jpeg">
         <div class="calendar-count-center">
           <span style="color: white; font-size: 5rem">
              {{ company.pos }}
@@ -31,7 +30,7 @@
         </div>
         <ng-template #showCard>
           <a [routerLink]="'/company/' + company.pos" routerLinkActive="active">
-          <img style="width:100%;" [src]="company.images[0]">
+          <img style="width:100%; height: 230px" [src]="company.images[0]">
           <div class="calendar-count-center">
           <span style="color: white; font-size: 5rem">
              {{ company.pos }}

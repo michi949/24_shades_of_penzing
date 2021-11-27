@@ -1,11 +1,22 @@
+import {IconParams, IconProp} from "@fortawesome/fontawesome-svg-core";
+import {IconName} from "@fortawesome/free-brands-svg-icons";
+import {IconPrefix} from "@fortawesome/free-solid-svg-icons";
+
 export interface ICompany {
   name: string
   pos: number
   showDate: Date
   description: string
   images: string[]
-  lat: string
-  long: string
+  socialMedia: ISocialMediaInfo[]
+  lat: number
+  long: number
+}
+
+export interface ISocialMediaInfo {
+  icon: IconName
+  iconPrefix: IconPrefix
+  path: string
 }
 
 export interface IWorldTimeApi {

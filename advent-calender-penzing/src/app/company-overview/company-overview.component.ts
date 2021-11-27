@@ -1,5 +1,5 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import {ICompany} from "../common/interfaces";
+import {ICompany, ISocialMediaInfo} from "../common/interfaces";
 import {ActivatedRoute, Router} from "@angular/router";
 import {Observable, Subscription} from "rxjs";
 import {CompanyConstructor} from "../common/company-constructor";
@@ -12,14 +12,9 @@ import {CompanyConstructor} from "../common/company-constructor";
 export class CompanyOverviewComponent implements OnInit, OnDestroy {
   private subscriptions$: Subscription[] = []
   public company?: ICompany
-  public mapOptions: google.maps.MapOptions = {
-    center: { lat: 38.9987208, lng: -77.2538699 },
-    disableDefaultUI: true,
-    zoom : 14
-  }
-
+  public mapOptions: google.maps.MapOptions = {}
   public marker = {
-    position: { lat: 38.9987208, lng: -77.2538699 },
+    position: { lat: this.company?.lat ?? 0, lng: this.company?.long ?? 0 }
   }
 
   constructor(private readonly activatedRoute: ActivatedRoute,
@@ -34,7 +29,9 @@ export class CompanyOverviewComponent implements OnInit, OnDestroy {
 
       if (this.company === null || this.company === undefined) {
         this.router.navigate(["/error"]);
+        return;
       }
+      this.setUpMap();
     }));
   }
 
@@ -43,4 +40,31 @@ export class CompanyOverviewComponent implements OnInit, OnDestroy {
       subscription.unsubscribe();
     });
   }
+
+  // #region Utility
+
+  public getImageUrl(next: number): string {
+    return this.company?.images[next] ?? ""
+  }
+
+  public getSocialMediaInfo(): ISocialMediaInfo[] {
+    return this.company?.socialMedia ?? []
+  }
+
+  // #endregion
+
+  // #region Helper
+  private setUpMap() {
+    this.mapOptions  = {
+      center: { lat: this.company?.lat ?? 0, lng: this.company?.long ?? 0},
+      disableDefaultUI: true,
+      zoom : 14
+    }
+
+    this.marker = {
+      position: { lat: this.company?.lat ?? 0, lng: this.company?.long ?? 0 },
+    }
+  }
+
+  // #endregion
 }
