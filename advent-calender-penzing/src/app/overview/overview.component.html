@@ -20,13 +20,25 @@
 
      <!-- Calendar -->
     <div class="card-columns" style="margin-top: 0.8rem">
-      <div *ngFor="let i of [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24]" class="card">
+      <div *ngFor="let company of companyConstructor.companies" class="card">
+        <div *ngIf="company.showDate <= timeService.currentDate; else showCard">
         <img style="width:100%;" class="blur-image" src="assets/images/calendar-mock/christmas-tree-5758765_1280.jpeg">
         <div class="calendar-count-center">
           <span style="color: white; font-size: 5rem">
-             {{ i }}
+             {{ company.pos }}
           </span>
         </div>
+        </div>
+        <ng-template #showCard>
+          <a [routerLink]="'/company/' + company.pos" routerLinkActive="active">
+          <img style="width:100%;" [src]="company.images[0]">
+          <div class="calendar-count-center">
+          <span style="color: white; font-size: 5rem">
+             {{ company.pos }}
+          </span>
+          </div>
+          </a>
+        </ng-template>
       </div>
     </div>
   </div>

@@ -11,7 +11,6 @@ hr {
   }
 }
 
-
   .blur-image {
     filter: blur(10px);
     -webkit-filter: blur(10px);
@@ -61,7 +60,6 @@ hr {
   }
 }
 
-/* added small blur every 6 snowflakes*/
 .snowflake:nth-child(6n) {
   filter: blur(1px);
 }
