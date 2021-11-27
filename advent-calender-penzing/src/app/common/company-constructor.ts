@@ -32,6 +32,8 @@ export class CompanyConstructor {
         showDate: new Date(2021, 11, 2),
         description: "dbla",
         images: ["https://images.unsplash.com/photo-1545153599-04d92985fe97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"],
+        lat: "",
+        long: ""
       },
       {
         name: "Test",
@@ -39,6 +41,8 @@ export class CompanyConstructor {
         showDate: new Date(),
         description: "dbla",
         images: ["bla"],
+        lat: "",
+        long: ""
       },
       {
         name: "Test",
@@ -46,6 +50,8 @@ export class CompanyConstructor {
         showDate: new Date(),
         description: "dbla",
         images: ["bla"],
+        lat: "",
+        long: ""
       },
       {
         name: "Test",
@@ -53,6 +59,8 @@ export class CompanyConstructor {
         showDate: new Date(),
         description: "dbla",
         images: ["bla"],
+        lat: "",
+        long: ""
       },
       {
         name: "Test",
@@ -60,6 +68,8 @@ export class CompanyConstructor {
         showDate: new Date(),
         description: "dbla",
         images: ["bla"],
+        lat: "",
+        long: ""
       }
     ]
   }

@@ -4,6 +4,8 @@ export interface ICompany {
   showDate: Date
   description: string
   images: string[]
+  lat: string
+  long: string
 }
 
 export interface IWorldTimeApi {

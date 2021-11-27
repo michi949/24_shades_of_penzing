@@ -12,6 +12,7 @@ import { AboutComponent } from './about/about.component';
 import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 import { CompanyOverviewComponent } from './company-overview/company-overview.component';
 import {HttpClientModule} from "@angular/common/http";
+import {GoogleMapsModule} from "@angular/google-maps";
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import {HttpClientModule} from "@angular/common/http";
     BrowserAnimationsModule,
     NgbModule,
     FontAwesomeModule,
-    HttpClientModule
+    HttpClientModule,
+    GoogleMapsModule
   ],
   providers: [
   ],
