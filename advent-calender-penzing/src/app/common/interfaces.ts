@@ -8,15 +8,23 @@ export interface ICompany {
   showDate: Date
   description: string
   images: string[]
+  offers: IOffers[]
   socialMedia: ISocialMediaInfo[]
   lat: number
   long: number
+}
+
+export interface IOffers {
+  path?: string
+  title: string
+  description: string
 }
 
 export interface ISocialMediaInfo {
   icon: IconName
   iconPrefix: IconPrefix
   path: string
+  title: string
 }
 
 export interface IWorldTimeApi {

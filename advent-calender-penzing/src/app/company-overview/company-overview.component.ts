@@ -1,5 +1,5 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import {ICompany, ISocialMediaInfo} from "../common/interfaces";
+import {ICompany, IOffers, ISocialMediaInfo} from "../common/interfaces";
 import {ActivatedRoute, Router} from "@angular/router";
 import {Observable, Subscription} from "rxjs";
 import {CompanyConstructor} from "../common/company-constructor";
@@ -10,12 +10,13 @@ import {CompanyConstructor} from "../common/company-constructor";
   styleUrls: ['./company-overview.component.scss']
 })
 export class CompanyOverviewComponent implements OnInit, OnDestroy {
-  private subscriptions$: Subscription[] = []
-  public company?: ICompany
-  public mapOptions: google.maps.MapOptions = {}
+  private subscriptions$: Subscription[] = [];
+  public company?: ICompany;
+  public currentImagePos = 0;
+  public mapOptions: google.maps.MapOptions = {};
   public marker = {
     position: { lat: this.company?.lat ?? 0, lng: this.company?.long ?? 0 }
-  }
+  };
 
   constructor(private readonly activatedRoute: ActivatedRoute,
               private readonly router: Router,
@@ -42,13 +43,31 @@ export class CompanyOverviewComponent implements OnInit, OnDestroy {
   }
 
   // #region Utility
+  public getImageCount(): number {
+    return this.company?.images.length ?? 0;
+  }
 
-  public getImageUrl(next: number): string {
-    return this.company?.images[next] ?? ""
+  public getImageStringToPos(pos: number): string {
+    return this.company?.images[pos] ?? "";
+  }
+
+  public getNextImagePos(next: number) {
+    if(next >= this.company?.images.length!) {
+      this.currentImagePos = 0;
+      return
+    } else if ( next < 0) {
+      this.currentImagePos = this.company?.images.length!-1;
+      return;
+    }
+    this.currentImagePos = next;
   }
 
   public getSocialMediaInfo(): ISocialMediaInfo[] {
-    return this.company?.socialMedia ?? []
+    return this.company?.socialMedia ?? [];
+  }
+
+  public getOffers(): IOffers[] {
+    return this.company?.offers ?? [];
   }
 
   // #endregion

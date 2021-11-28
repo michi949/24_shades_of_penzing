@@ -64,21 +64,46 @@ export class CompanyConstructor {
           "assets/images/calendar-data/01/Logo.jpeg",
           "assets/images/calendar-data/01/Team.jpeg"
         ],
+        offers: [
+          {
+            title: "Adventkalender für Hunde",
+            description: "Adventkalender für Hunde mit 8 köstlichen Snacks aus Österreich",
+            path: "https://www.doggerie.at/shop/canini-adventkalender-200g.html"
+          },
+          {
+            title: "Doggerie Hundeseife",
+            description: "Die „smell good“ Seife entstand in Zusammenarbeit mit\n" +
+              "der Wiener Seifenmanufaktur in traditioneller Handarbeit -\n" +
+              "made in Vienna - und sorgt für ein glänzendes Fell und\n" +
+              "duftend-gesunde Haut dank der natürlichen Inhaltsstoffe",
+            path: "https://www.doggerie.at/shop/Tierseife--Smell-Good-Seife--Hundeseife--Hundeshampoo--Pflegeseife--milde-Seife-fuer-hunde--Hundeseife-mild--Seife-gegen-Insekten--Katzenseife--Seife-fuer-Katze--Pferdeseife.html"
+          },
+          {
+            title: "BIO Wintermenü",
+            description: "Hochqualitative BIO-Gans in einem Komplettmenü\n" +
+              "verfeinert mit schmackhaften und gesunden Maroni\n" +
+              "und wilder Preiselbeere!",
+            path: "https://www.doggerie.at/shop/canini-wintermenue-bio-gans-mit-maroni-preiselbeere-limited-edition-400g.html"
+          }
+        ],
         socialMedia: [
           {
             path: "https://www.doggerie.at/",
             icon: "globe",
-            iconPrefix: "fas"
+            iconPrefix: "fas",
+            title: "Website"
           },
           {
             path: "https://www.facebook.com/doggerie/",
             icon: "facebook",
-            iconPrefix: "fab"
+            iconPrefix: "fab",
+            title: "Facebook"
           },
           {
             path: "https://www.instagram.com/doggerievienna/?hl=de",
             icon: "instagram",
-            iconPrefix: "fab"
+            iconPrefix: "fab",
+            title: "Instagram"
           }
         ],
         lat: 48.205654185991435,
