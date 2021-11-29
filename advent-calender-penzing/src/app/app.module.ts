@@ -13,6 +13,7 @@ import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 import { CompanyOverviewComponent } from './company-overview/company-overview.component';
 import {HttpClientModule} from "@angular/common/http";
 import {GoogleMapsModule} from "@angular/google-maps";
+import { DataPrivacyComponent } from './data-privacy/data-privacy.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import {GoogleMapsModule} from "@angular/google-maps";
     AboutComponent,
     LegalNoticeComponent,
     CompanyOverviewComponent,
+    DataPrivacyComponent,
   ],
   imports: [
     BrowserModule,

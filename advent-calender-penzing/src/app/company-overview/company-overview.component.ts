@@ -3,6 +3,7 @@ import {ICompany, IOffers, ISocialMediaInfo} from "../common/interfaces";
 import {ActivatedRoute, Router} from "@angular/router";
 import {Observable, Subscription} from "rxjs";
 import {CompanyConstructor} from "../common/company-constructor";
+import {TimeService} from "../services/time-service";
 
 @Component({
   selector: 'app-company-overview',
@@ -20,7 +21,8 @@ export class CompanyOverviewComponent implements OnInit, OnDestroy {
 
   constructor(private readonly activatedRoute: ActivatedRoute,
               private readonly router: Router,
-              private readonly companyConstructor: CompanyConstructor) { }
+              private readonly companyConstructor: CompanyConstructor,
+              private readonly timeService: TimeService) { }
 
   ngOnInit(): void {
     this.subscriptions$.push(
@@ -28,7 +30,7 @@ export class CompanyOverviewComponent implements OnInit, OnDestroy {
       let id = params['id'] as number;
       this.company = this.companyConstructor.companies.find(c => id == c.pos);
 
-      if (this.company === null || this.company === undefined) {
+      if (this.company === null || this.company === undefined || this.company.showDate >= this.timeService.currentDate) {
         this.router.navigate(["/error"]);
         return;
       }
