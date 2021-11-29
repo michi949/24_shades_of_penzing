@@ -10,7 +10,6 @@ import {CompanyOverviewComponent} from "./company-overview/company-overview.comp
 const routes: Routes = [
   { path: "", pathMatch: "full",redirectTo: "overview"},
   { path: "overview", component: OverviewComponent},
-  { path: "team", component: TeamComponent},
   { path: "about", component: AboutComponent},
   { path: "legal", component: LegalNoticeComponent},
   { path: "company/:id", component: CompanyOverviewComponent},

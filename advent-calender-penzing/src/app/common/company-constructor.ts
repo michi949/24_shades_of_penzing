@@ -29,7 +29,7 @@ export class CompanyConstructor {
       {
         name: "Doggerie Hundesalon & Boutique",
         pos: 1,
-        showDate: new Date(2021, 11, 2),
+        showDate: new Date(2021, 10, 2),
         description: "Wir sind ein kleines, familiengeführtes Unternehmen, welches nächstes Jahr sein 10jähriges Jubiläum feiern darf!\n" +
           "\n" +
           "Wir setzen unseren Schwerpunkt auf Kundenfreundlichkeit- und Betreuung, persönliche Beziehung zu unseren Kund- und HUNDschaften,\n" +
@@ -108,8 +108,269 @@ export class CompanyConstructor {
         ],
         lat: 48.205654185991435,
         long: 16.225320170949864
+      },
+      {
+        name: "Empty- TODO",
+        pos: 2,
+        showDate: new Date(2021, 11, 2),
+        description: "Test",
+        images: [""],
+        socialMedia: [{
+          path: "",
+          icon: "instagram",
+          iconPrefix: "fab",
+          title: ""
+        }],
+        offers: [{
+          title: "",
+          description: "",
+          path: ""
+        }],
+        lat: 0,
+        long: 0
+      },
+      {
+        name: "Empty- TODO",
+        pos: 3,
+        showDate: new Date(2021, 11, 3),
+        description: "",
+        images: [],
+        socialMedia: [],
+        offers: [],
+        lat: 0,
+        long: 0
+      },
+      {
+        name: "Empty- TODO",
+        pos: 4,
+        showDate: new Date(2021, 11, 4),
+        description: "",
+        images: [],
+        socialMedia: [],
+        offers: [],
+        lat: 0,
+        long: 0
+      },
+      {
+        name: "Empty- TODO",
+        pos: 5,
+        showDate: new Date(2021, 11, 5),
+        description: "",
+        images: [],
+        socialMedia: [],
+        offers: [],
+        lat: 0,
+        long: 0
+      },
+      {
+        name: "Empty- TODO",
+        pos: 6,
+        showDate: new Date(2021, 11, 6),
+        description: "",
+        images: [],
+        socialMedia: [],
+        offers: [],
+        lat: 0,
+        long: 0
+      },
+      {
+        name: "Empty- TODO",
+        pos: 7,
+        showDate: new Date(2021, 11, 7),
+        description: "",
+        images: [],
+        socialMedia: [],
+        offers: [],
+        lat: 0,
+        long: 0
+      },
+      {
+        name: "Empty- TODO",
+        pos: 8,
+        showDate: new Date(2021, 11, 8),
+        description: "",
+        images: [],
+        socialMedia: [],
+        offers: [],
+        lat: 0,
+        long: 0
+      },
+      {
+        name: "Empty- TODO",
+        pos: 9,
+        showDate: new Date(2021, 11, 9),
+        description: "",
+        images: [],
+        socialMedia: [],
+        offers: [],
+        lat: 0,
+        long: 0
+      },
+      {
+        name: "Empty- TODO",
+        pos: 10,
+        showDate: new Date(2021, 11, 10),
+        description: "",
+        images: [],
+        socialMedia: [],
+        offers: [],
+        lat: 0,
+        long: 0
+      },
+      {
+        name: "Empty- TODO",
+        pos: 11,
+        showDate: new Date(2021, 11, 11),
+        description: "",
+        images: [],
+        socialMedia: [],
+        offers: [],
+        lat: 0,
+        long: 0
+      },
+      {
+        name: "Empty- TODO",
+        pos: 12,
+        showDate: new Date(2021, 11, 12),
+        description: "",
+        images: [],
+        socialMedia: [],
+        offers: [],
+        lat: 0,
+        long: 0
+      },
+      {
+        name: "Empty- TODO",
+        pos: 13,
+        showDate: new Date(2021, 11, 13),
+        description: "",
+        images: [],
+        socialMedia: [],
+        offers: [],
+        lat: 0,
+        long: 0
+      },
+      {
+        name: "Empty- TODO",
+        pos: 14,
+        showDate: new Date(2021, 11, 14),
+        description: "",
+        images: [],
+        socialMedia: [],
+        offers: [],
+        lat: 0,
+        long: 0
+      },
+      {
+        name: "Empty- TODO",
+        pos: 15,
+        showDate: new Date(2021, 11, 15),
+        description: "",
+        images: [],
+        socialMedia: [],
+        offers: [],
+        lat: 0,
+        long: 0
+      },
+      {
+        name: "Empty- TODO",
+        pos: 16,
+        showDate: new Date(2021, 11, 16),
+        description: "",
+        images: [],
+        socialMedia: [],
+        offers: [],
+        lat: 0,
+        long: 0
+      },
+      {
+        name: "Empty- TODO",
+        pos: 17,
+        showDate: new Date(2021, 11, 17),
+        description: "",
+        images: [],
+        socialMedia: [],
+        offers: [],
+        lat: 0,
+        long: 0
+      },
+      {
+        name: "Empty- TODO",
+        pos: 18,
+        showDate: new Date(2021, 11, 18),
+        description: "",
+        images: [],
+        socialMedia: [],
+        offers: [],
+        lat: 0,
+        long: 0
+      },
+      {
+        name: "Empty- TODO",
+        pos: 19,
+        showDate: new Date(2021, 11, 19),
+        description: "",
+        images: [],
+        socialMedia: [],
+        offers: [],
+        lat: 0,
+        long: 0
+      },
+      {
+        name: "Empty- TODO",
+        pos: 20,
+        showDate: new Date(2021, 11, 20),
+        description: "",
+        images: [],
+        socialMedia: [],
+        offers: [],
+        lat: 0,
+        long: 0
+      },
+      {
+        name: "Empty- TODO",
+        pos: 21,
+        showDate: new Date(2021, 11, 21),
+        description: "",
+        images: [],
+        socialMedia: [],
+        offers: [],
+        lat: 0,
+        long: 0
+      },
+      {
+        name: "Empty- TODO",
+        pos: 22,
+        showDate: new Date(2021, 11, 22),
+        description: "",
+        images: [],
+        socialMedia: [],
+        offers: [],
+        lat: 0,
+        long: 0
+      },
+      {
+        name: "Empty- TODO",
+        pos: 23,
+        showDate: new Date(2021, 11, 23),
+        description: "",
+        images: [],
+        socialMedia: [],
+        offers: [],
+        lat: 0,
+        long: 0
+      },
+      {
+        name: "Empty- TODO",
+        pos: 24,
+        showDate: new Date(2021, 11, 24),
+        description: "",
+        images: [],
+        socialMedia: [],
+        offers: [],
+        lat: 0,
+        long: 0
       }
-      // TODO: Add further
     ]
   }
 }

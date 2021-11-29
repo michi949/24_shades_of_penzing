@@ -13,7 +13,7 @@ export class OverviewComponent implements OnInit {
               public readonly companyConstructor: CompanyConstructor) { }
 
   ngOnInit(): void {
-
+    console.log(this.companyConstructor.companies)
   }
 
 }

@@ -4,19 +4,16 @@
       <img src="assets/icons/jvp14.svg" alt="" width="50" height="50" class="d-inline-block align-text-center">
       <span style="margin-left: 0.5rem; color: #1a9ead"> Junge ÖVP Penzing </span>
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" (click)="isCollapsed = !isCollapsed" type="button"  data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav" [ngbCollapse]="!isCollapsed">
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" routerLink="/overview" routerLinkActive="active">Übersicht</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" routerLink="/about" routerLinkActive="active">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/team" routerLinkActive="active">Team</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" routerLink="/legal" routerLinkActive="active">Impressum</a>

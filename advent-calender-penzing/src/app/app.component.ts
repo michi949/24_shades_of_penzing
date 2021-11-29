@@ -10,6 +10,7 @@ import {TimeService} from "./services/time-service";
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  public isCollapsed = false;
 
   public constructor(private readonly library: FaIconLibrary,
                      private readonly timeService: TimeService) {
