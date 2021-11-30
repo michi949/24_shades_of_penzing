@@ -157,6 +157,7 @@ export class CompanyConstructor {
         lat: 48.198176246886476,
         long: 16.262203404592128
       },
+      // -------------------------- DAY 3
       {
         name: "Regina Arnold Beauty & Wellness",
         pos: 3,
@@ -193,6 +194,7 @@ export class CompanyConstructor {
         lat: 0,
         long: 0
       },
+      // -------------------------- DAY 4
       {
         name: "Empty- TODO",
         pos: 4,
