@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {OverviewComponent} from "./overview/overview.component";
 import {PageNotFoundComponent} from "./page-not-found/page-not-found.component";
-import {TeamComponent} from "./team/team.component";
 import {AboutComponent} from "./about/about.component";
 import {LegalNoticeComponent} from "./legal-notice/legal-notice.component";
 import {CompanyOverviewComponent} from "./company-overview/company-overview.component";

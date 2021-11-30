@@ -7,7 +7,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { OverviewComponent } from './overview/overview.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { TeamComponent } from './team/team.component';
 import { AboutComponent } from './about/about.component';
 import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 import { CompanyOverviewComponent } from './company-overview/company-overview.component';
@@ -21,7 +20,6 @@ import { DataPrivacyComponent } from './data-privacy/data-privacy.component';
     AppComponent,
     OverviewComponent,
     PageNotFoundComponent,
-    TeamComponent,
     AboutComponent,
     LegalNoticeComponent,
     CompanyOverviewComponent,

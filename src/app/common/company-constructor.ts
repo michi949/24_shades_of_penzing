@@ -21,6 +21,7 @@ export class CompanyConstructor {
       companies[currentIndex] = companies[randomIndex];
       companies[randomIndex] = temporaryValue;
     }
+
     return companies;
   }
 
