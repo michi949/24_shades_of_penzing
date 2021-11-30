@@ -40,6 +40,14 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+angular/cache/
+idea/
+vscode/
+.angular/cache/
+.idea/
+.vscode/
+dist/
+
 
 # TypeScript v1 declaration files
 typings/
