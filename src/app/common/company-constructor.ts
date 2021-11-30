@@ -26,10 +26,11 @@ export class CompanyConstructor {
 
   private setupCompanies() {
     this.companies = [
+      // -------------------------- DAY 1
       {
         name: "Doggerie Hundesalon & Boutique",
         pos: 1,
-        showDate: new Date(2021, 10, 2),
+        showDate: new Date(2021, 11, 1),
         description: "Wir sind ein kleines, familiengeführtes Unternehmen, welches nächstes Jahr sein 10jähriges Jubiläum feiern darf!\n" +
           "\n" +
           "Wir setzen unseren Schwerpunkt auf Kundenfreundlichkeit- und Betreuung, persönliche Beziehung zu unseren Kund- und HUNDschaften,\n" +
@@ -66,12 +67,12 @@ export class CompanyConstructor {
         ],
         offers: [
           {
-            title: "Adventkalender für Hunde",
+            title: "Adventkalender für Hunde -20%",
             description: "Adventkalender für Hunde mit 8 köstlichen Snacks aus Österreich",
             path: "https://www.doggerie.at/shop/canini-adventkalender-200g.html"
           },
           {
-            title: "Doggerie Hundeseife",
+            title: "Doggerie Hundeseife 9,90 statt 12,90",
             description: "Die „smell good“ Seife entstand in Zusammenarbeit mit\n" +
               "der Wiener Seifenmanufaktur in traditioneller Handarbeit -\n" +
               "made in Vienna - und sorgt für ein glänzendes Fell und\n" +
@@ -79,7 +80,7 @@ export class CompanyConstructor {
             path: "https://www.doggerie.at/shop/Tierseife--Smell-Good-Seife--Hundeseife--Hundeshampoo--Pflegeseife--milde-Seife-fuer-hunde--Hundeseife-mild--Seife-gegen-Insekten--Katzenseife--Seife-fuer-Katze--Pferdeseife.html"
           },
           {
-            title: "BIO Wintermenü",
+            title: "BIO Wintermenü -10%",
             description: "Hochqualitative BIO-Gans in einem Komplettmenü\n" +
               "verfeinert mit schmackhaften und gesunden Maroni\n" +
               "und wilder Preiselbeere!",
@@ -109,34 +110,86 @@ export class CompanyConstructor {
         lat: 48.205654185991435,
         long: 16.225320170949864
       },
+      // -------------------------- DAY 2
       {
-        name: "Empty- TODO",
+        name: "Bier Keissler / Gasthaus Peschta",
         pos: 2,
         showDate: new Date(2021, 11, 2),
-        description: "Test",
-        images: [""],
+        description: "Der Bier Keissler wurde mitte November 2021 eröffnet und ist die neue Bier-& Weinhandlung bzw. Bier-& Weinschank vis-a-vis vom Bahnhof Hütteldorf. Auch im Lockdown kann bei uns bestes Bier der Marken Hütteldorfer Bräu, Gablitzer & Schremser sowie ausgewählte Weine abholen, jeweils von Mittwoch-Samstag, 15h-19h. Außerdem kann man bequem im Webshop per Click & Collect bestellen.\n" +
+            "Das Gasthaus wurde 1930 eröffnet und wird seit mittlerweile 4 Generationen als Familienbetrieb geführt und verwöhnt seine Gäste mit besten Wiener Schmankerl, saisonalen Spezialitäten, gepflegten Bieren von Gösser und Hütteldorfer Bräu sowie mit ausgewählten Weinspezialitäten heimischer Winzer.\n" +
+            "Auch im Lockdown verwöhnen wir unsere Gäste mit Menüs und Schmankerl zum Abholen - jeweils Mittwoch-Sonntag von 11h-14h sowie von 17h-19h. Außerdem kann man im Webshop per Click & Collect bestellen.\n",
+        images: [
+            "assets/images/calendar-data/02/02-01.jpeg",
+            "assets/images/calendar-data/02/02-02.jpeg",
+            "assets/images/calendar-data/02/02-03.jpeg",
+            "assets/images/calendar-data/02/02-04.jpeg"
+        ],
         socialMedia: [{
-          path: "",
-          icon: "instagram",
-          iconPrefix: "fab",
-          title: ""
-        }],
+          path: "https://gasthaus-peschta.at/speis-und-trank",
+          icon: "globe",
+          iconPrefix: "fas",
+          title: "Gasthaus Peschta"
+        },
+          {
+            path: "https://bierkeissler.at/",
+            icon: "globe",
+            iconPrefix: "fas",
+            title: "Bier Keissler"
+          },
+          {
+            path: "https://www.facebook.com/Gasthaus-Peschta-115207331893640/",
+            icon: "facebook",
+            iconPrefix: "fab",
+            title: "Facebook"
+          }
+        ],
         offers: [{
-          title: "",
-          description: "",
+          title: "Hütteldorfer Geschenkset",
+          description: "Das Hütteldorfer Geschenkset, bestehend aus einer Fl. 0,33l Bernstein Lager & einem Bierglas oder unser Hütteldorfer Bräu Weihnachtsbock in der eleganten 0,5l Bügelverschluss-Flasche.",
           path: ""
-        }],
-        lat: 0,
-        long: 0
+        },
+          {
+            title: "Hausgemachtes",
+            description: "Auswahl unserer hausgemachten Marmelade, Pestos oder Pasteten im Glas oder unser hausgemachter Eierlikör- und natürlich unsere beliebten Geschenkgutscheine.",
+            path: ""
+          }
+        ],
+        lat: 48.198176246886476,
+        long: 16.262203404592128
       },
       {
-        name: "Empty- TODO",
+        name: "Regina Arnold Beauty & Wellness",
         pos: 3,
         showDate: new Date(2021, 11, 3),
-        description: "",
-        images: [],
-        socialMedia: [],
-        offers: [],
+        description: "Meine Leidenschaft ist es Frauen zu unterstützen Ihre persönliche Schönheit zu unterstreichen! Aber auch Männerhaut braucht Pflege! Hat Sie nicht schon das eine oder andere Fältchen beunruhigt? Oder leiden Sie unter trockener Haut? An Unreinheiten durch das Tragen der Maske? Ich kann helfen! Ich biete Ihnen kompetente Beratung mit einer der besten und innovativsten Kosmetiklinien weltweit: ARTISTRY Pflegeserie SKIN NUTRITION steht für CLEAN BEAUTY, ist vegan, frei von Parabene und Mineralölen, natürlich ohne Tierversuche! Ich helfe Ihnen, sich natürlich schön zu zeigen – OHNE KOMPROMISSE!\n" +
+            "Ich besitze mehr als 15 Jahre Erfahrung in Beratung und Verkauf von ARTISTRY Pflegekosmetik und dekorativer Kosmetik. Biete Lieferservice, als auch die Möglichkeit die Produkte selbst online zu bestellen, den Preisvorteil der Kundenkarte zu nutzen.\n" +
+            "Trendig online mit Smartphone shoppen und trotzdem immer persönliche Beratung genießen? Ist das denn möglich? JA bei Regina Arnold, Beauty & Wellness gibt es das! Ich freue mich auf Sie! Genießen Sie doch meine persönlich Pflegeberatung –NATÜRLICH auch ONLINE!\n",
+        images: [
+          "assets/images/calendar-data/03/03-01.JPG",
+          "assets/images/calendar-data/03/03-02.jpeg",
+          "assets/images/calendar-data/03/03-02.jpeg"
+        ],
+        socialMedia: [
+          {
+            path: "www.regina-arnold.com",
+            icon: "globe",
+            iconPrefix: "fas",
+            title: "Regina Arnold"
+          },
+          {
+            path: "https://www.facebook.com/profile.php?id=100008384250928",
+            icon: "facebook",
+            iconPrefix: "fab",
+            title: "Facebook"
+          }
+        ],
+        offers: [
+          {
+            title: "Gutschein",
+            description: "Ein Gutschein für eine persönliche oder online Kosmetik-Pflegeberatung",
+            path: " assets/images/calendar-data/03/Gutschein_03.pdf"
+          }
+        ],
         lat: 0,
         long: 0
       },

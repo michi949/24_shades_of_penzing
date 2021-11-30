@@ -12,8 +12,5 @@ export class OverviewComponent implements OnInit {
   constructor(public readonly timeService: TimeService,
               public readonly companyConstructor: CompanyConstructor) { }
 
-  ngOnInit(): void {
-    console.log(this.companyConstructor.companies)
-  }
-
+  ngOnInit(): void {}
 }
