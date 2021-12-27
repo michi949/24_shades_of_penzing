@@ -11,7 +11,7 @@ export class WorldTimeApi {
   constructor(public readonly http: HttpClient) {}
 
   public getTimeForVienna(): Observable<IWorldTimeApi>{
-    return this.http.get<IWorldTimeApi>("http://worldtimeapi.org/api/timezone/Europe/Vienna");
+    return this.http.get<IWorldTimeApi>("https://worldtimeapi.org/api/timezone/Europe/Vienna");
   }
 
 }

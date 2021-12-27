@@ -25,6 +25,7 @@ export class CompanyOverviewComponent implements OnInit, OnDestroy {
               private readonly timeService: TimeService) { }
 
   ngOnInit(): void {
+    window.scroll(0,0);
     this.subscriptions$.push(
       this.activatedRoute.params.subscribe(params => {
       let id = params['id'] as number;
